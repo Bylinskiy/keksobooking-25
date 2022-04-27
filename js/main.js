@@ -70,7 +70,7 @@ const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'
 ];
 
-
+const SIMILAR_PLACE_COUNT = 10;
 
 const createPlace = () => {
   const generateCoords = () => {
@@ -105,3 +105,5 @@ const createPlace = () => {
     }
   };
 };
+
+const similarPlaces = Array.from({length: SIMILAR_PLACE_COUNT}, createPlace);
